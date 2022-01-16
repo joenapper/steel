@@ -163,7 +163,7 @@ header {
   width: 100%;
   height: 100vh;
   background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(/images/hero-img.jpeg) center no-repeat;
+    url("images/hero-img.jpeg") center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
