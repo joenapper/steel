@@ -47,26 +47,18 @@ sr.reveal(".animate-bottom", {
   delay: 600,
 });
 
-// Contact Modal
-// function openModal() {
-//   document.querySelector(".bg-modal").style.display = "flex";
-//   document.body.style.overflow = "hidden";
-// }
-
-// document.querySelector(".close").addEventListener("click", function () {
-//   document.querySelector(".bg-modal").style.display = "none";
-//   document.body.style.overflow = "visible";
-// });
-
 // Sends Form
 function sendMail(contactForm) {
   document.getElementById("submit").disabled = true;
   document.querySelector(".loader").style.display = "inline-block";
 
   emailjs
-    .send("gmail", "outdoor-revive", {
+    .send("gmail", "velocitysteel", {
       from_name: contactForm.name.value,
+      from_company: contactForm.company.value,
       from_number: contactForm.number.value,
+      from_email: contactForm.email.value,
+      from_message: contactForm.message.value,
     })
     .then(
       function (response) {
