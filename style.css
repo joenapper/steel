@@ -210,7 +210,7 @@ header {
 
 .line {
   width: 100%;
-  max-width: 22.4rem;
+  max-width: 24.4rem;
   height: 0.25rem;
   background-color: #fff;
   opacity: 0;
@@ -294,10 +294,6 @@ header {
   margin-top: 3.9rem;
 }
 
-/* .our-story-description .global-headline {
-  margin-top: 6.9rem;
-} */
-
 .headline-dark {
   color: var(--main-font-color-dark);
   letter-spacing: 0.7rem;
@@ -348,10 +344,6 @@ header {
 }
 
 /* Contact */
-.contact {
-  background-color: #ececec;
-}
-
 .contact-form {
   margin-top: 1rem;
 }
@@ -365,7 +357,6 @@ header {
 .contact-form textarea {
   width: 100%;
   display: block;
-  /* margin: 1rem auto; */
   margin-bottom: 1rem;
   padding: 1rem;
   border: 1px solid var(--main-font-color-dark);
@@ -383,7 +374,6 @@ header {
 }
 
 .contact-form button {
-  /* margin-top: 1rem; */
   padding: 1rem 2rem;
   cursor: pointer;
   background-color: var(--secondary-font-color);
@@ -433,17 +423,12 @@ header {
 
 /* Slider */
 .services {
-  /* background-color: #f9f9f9; */
   background-color: #ececec;
   color: #000;
-  /* background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(/images/gallery-4.jpg) center no-repeat;
- */
 }
 
 .services .animate-bottom {
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
 }
 
@@ -453,13 +438,13 @@ header {
   margin-bottom: 2rem;
 }
 
-/* .service:last-of-type {
-  margin-right: 0;
-} */
-
 .service img {
   width: 150px;
   height: 150px;
+}
+
+.service img.object-fit {
+  object-fit: contain;
 }
 
 .service h3 {
@@ -484,14 +469,14 @@ header {
     flex-direction: row;
     justify-content: space-between;
   }
+  .services .animate-bottom.memberships {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
   .service {
     width: 20%;
   }
-
-  /* .service h3 {
-  font-size: 2.5rem;
-} */
 }
 
 /* Our Services */
