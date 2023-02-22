@@ -348,9 +348,6 @@ header {
 }
 
 /* Contact */
-.contact {
-  background-color: #ececec;
-}
 
 .contact-form {
   margin-top: 1rem;
@@ -462,6 +459,10 @@ header {
   height: 150px;
 }
 
+.service img.object-fit {
+  object-fit: contain;
+}
+
 .service h3 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -483,6 +484,10 @@ header {
   .services .animate-bottom {
     flex-direction: row;
     justify-content: space-between;
+  }
+  .services .animate-bottom.memberships {
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .service {
